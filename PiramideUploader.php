@@ -8,18 +8,6 @@ class PiramideUploader {
 		$this->info_file = array();
 	}
 
-	/* Parametros: name del campo tipo file referente al fichero a subir
-	  directorio de destino sin la barra final
-	  Tipo o formato del fichero:
-	  image/jpeg
-	  image/png
-	  image/gif
-	  application/pdf
-	  application/msword
-	  text/plain
-	  CON NULL INDICAMOS QUE NO LE PASAMOS TIPO DE FICHERO
-	 */
-
 	public function upload($name, $file, $directory, $types_allowed, $force_name = NULL) {
 		$this->info_file = array(
 			"name"			=> $_FILES["$file"]["name"],
